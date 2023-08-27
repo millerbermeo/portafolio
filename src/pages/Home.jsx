@@ -35,14 +35,14 @@ function Home() {
             </div>
           </div>
         </div>
-        <div className="sm:w-[100%] md:w-[50%] sm:h-0 lg:h-screen sm:pt-5 lg:pt-24 flex justify-center flex-col items-center">
+        <div className="sm:w-[100%] md:w-[50%] sm:h-0 lg:h-screen sm:pt-10 lg:pt-24 flex justify-center flex-col items-center">
           
         <img src="modelo.jpg" className="max-w-[450px] w-full h-auto border rounded-[50%]" alt="" />
 <span className="mt-2 font-bold">Descargar CV</span>
 
         </div>
       </section>
-      <article className="w-full flex justify-center items-start sm:mt-5 lg:mt-32 pt-10 gap-8 flex-wrap">
+      <article className="w-full flex justify-center items-start sm:mt-10 lg:mt-32 pt-10 gap-8 flex-wrap">
       <Tecnologias />
       <img src="324shots_so.png" className="w-[420px] shadow-md" alt="" />
       

@@ -7,7 +7,7 @@ function Card({img, title, text}) {
   return (
     <>
     
-<div class="max-w-sm sm:w-[280px] lg:w-[250px] bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+<div class="max-w-sm w-[250px] lg:w-[250px] bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
     <a href="#">
         <img class="rounded-t-lg h-40 w-full" src={img} alt="" />
     </a>
