@@ -3,18 +3,21 @@ import Tecnologias from "./components/Tecnologias"
 import Card from "./components/Card"
 import { Github, Text } from "@react-symbols/icons"
 import FormContact from "./components/FormContact"
-import 'aos/dist/aos.css'; // Importa los estilos CSS de AOS
-import Aos from 'aos'; // Importa la librería AOS
+import 'aos/dist/aos.css';
+import Aos from 'aos';
 import { useEffect } from "react";
 import Float from "./components/Float"
+import Float2 from "./components/Float2"
 
 
 
 
 function Home() {
+
   useEffect(() => {
     Aos.init();
   }, []);
+
   return (
     <>
       <Navbar />
@@ -53,13 +56,14 @@ function Home() {
           <img src="modelo.jpg" className="max-w-[450px] w-full h-auto border rounded-[50%]" alt="" />
           <span className="mt-2 font-bold flex justify-center items-center"> Descargar CV </span>
 <Float/>
+<Float2/>
         </div>
       </section>
       <article className="w-full flex justify-center items-start sm:mt-10 lg:mt-32 pt-10 gap-8 flex-wrap">
         <Tecnologias />
         <img data-aos="fade-left"
           data-aos-delay="50"
-          data-aos-duration="1300" src="324shots_so.png" className="w-[420px] shadow-md" alt="" />
+          data-aos-duration="1300" src="herramientas.png" className="w-[420px] shadow-md" alt="" />
 
       </article>
 
