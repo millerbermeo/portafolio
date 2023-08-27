@@ -1,10 +1,16 @@
 
 import {Js, Tailwind, Sass, Node, PHP, Laravel, Database} from "@react-symbols/icons"
-
+import 'aos/dist/aos.css'; // Importa los estilos CSS de AOS
+import Aos from 'aos'; // Importa la librería AOS
+import { useEffect } from "react";
 function Tecnologias() {
+    useEffect(() => {
+        Aos.init();
+      }, []);
   return (
     <>
-        <div className="flex justify-center items-center flex-col sm:pl-0 md:pl-32 text-2xl">
+        <div data-aos="fade-right"
+                        data-aos-duration="1200" className="flex justify-center items-center flex-col sm:pl-0 md:pl-32 text-2xl">
             <div className=""><p><span className="text-red-400">const </span>Cliente= [</p> 
     
                 <div className="flex gap-2 items-center"><strong>Frotend:</strong> <img src="html-5.png" className="w-6" alt="" /> <img src="css-3.png" className="w-6"/> <Js className="w-9"/></div>
