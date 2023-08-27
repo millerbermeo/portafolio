@@ -12,37 +12,37 @@ function Home() {
       <Navbar />
       <section className="w-full flex sm:flex-col lg:flex-row items-center gap:10 flex-wrap ">
         <div className="md:w-[50%] sm:h-0 md:h-screen pt-40">
-          <div className="pl-10">
+          <div className="pl-10 mb-5">
             <div className="pb-10">Hello Welcome</div>
 
             <div className="font-bold text-slate-800 text-5xl mb-10">
               I'm Miller Efren <br></br>
-              FullStack Developer
+              Full Stack Developer
             </div>
             <div className="font-bold text-white mt-6 flex gap-2 ">
               <a className="border bg-red-400 p-2 pl-3 pr-3 rounded-md">Hire Me</a>
               <a className="text-black border-b-2 mt-2">See Portflio</a>
             </div>
 
-            <div className="mt-14 pl-14 pr-8">
-              <p>Soy un desarrollador de software con habilidades sólidas en HTML, CSS, JavaScript, React, PHP, Laravel y MySQL. He participado en diversos proyectos colaborativos, aportando mis conocimientos y destrezas. Mi enfoque se centra en la creación de soluciones interactivas y funcionales.</p>
+            <div className="mt-14 sm:lg-0 lg:pl-14 pr-8">
+              <p className="sm:text-md sm:text-center lg:text-left">Soy un desarrollador de software con habilidades sólidas en HTML, CSS, JavaScript, React, PHP, Laravel y MySQL. He participado en diversos proyectos colaborativos, aportando mis conocimientos y destrezas. Mi enfoque se centra en la creación de soluciones interactivas y funcionales.</p>
             </div>
             <div className="flex gap-3 mt-6">
               <span>Follow me:</span>
-              <img src="in.png" className="w-9" alt="" />
-              <Github className="w-8" />
+              <a target="_blank" href="https://www.linkedin.com/in/miller-rivera/"><img src="in.png" className="w-9" alt="" /></a>
+              <a target="_blank" href="https://github.com/millerbermeo"><Github className="w-8" /></a>
               <Text className="w-8" />
             </div>
           </div>
         </div>
-        <div className="sm:w-[100%] md:w-[50%] h-screen pt-20 flex justify-center flex-col items-center">
+        <div className="sm:w-[100%] md:w-[50%] sm:h-0 lg:h-screen sm:pt-5 lg:pt-24 flex justify-center flex-col items-center">
           
         <img src="modelo.jpg" className="max-w-[450px] w-full h-auto border rounded-[50%]" alt="" />
 <span className="mt-2 font-bold">Descargar CV</span>
 
         </div>
       </section>
-      <article className="w-full flex justify-center items-start mt-32 pt-10 gap-8 flex-wrap">
+      <article className="w-full flex justify-center items-start sm:mt-5 lg:mt-32 pt-10 gap-8 flex-wrap">
       <Tecnologias />
       <img src="324shots_so.png" className="w-[420px] shadow-md" alt="" />
       
