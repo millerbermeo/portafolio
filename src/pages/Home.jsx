@@ -30,7 +30,7 @@ function Home() {
             <div data-aos="fade-up"
               data-aos-duration="1500" className="font-bold text-slate-800 text-5xl mb-10">
               I'm Miller Efren <br></br>
-              Full Stack Developer
+              <div className="typewriter">Full Stack Developer</div>
             </div>
             <div data-aos="fade-up"
               data-aos-duration="1500"

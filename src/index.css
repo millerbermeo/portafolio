@@ -24,3 +24,32 @@ html {
   .animate-float-flash {
     animation: float-flash 2s ease-in-out;
   }
+
+  /* styles.css */
+
+.typewriter {
+  overflow: hidden; /* Oculta el texto que se desborda */
+  border-right: 0.1em solid orange; /* Línea vertical "escribiendo" */
+  white-space: nowrap; /* Evita saltos de línea */
+  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+/* Animación para la escritura */
+@keyframes typing {
+  from {
+      width: 0;
+  }
+  to {
+      width: 100%;
+  }
+}
+
+/* Animación para el cursor intermitente */
+@keyframes blink-caret {
+  from, to {
+      border-color: transparent;
+  }
+  50% {
+      border-color: rgb(255, 255, 255);
+  }
+}
