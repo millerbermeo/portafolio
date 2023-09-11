@@ -55,8 +55,8 @@ function Home() {
 
           <img src="modelo.jpg" className="max-w-[450px] w-full h-auto border rounded-[50%]" alt="" />
           <span className="mt-2 font-bold flex justify-center items-center"> Descargar CV </span>
-<Float/>
-<Float2/>
+          <Float />
+          <Float2 />
         </div>
       </section>
       <article className="w-full flex justify-center items-start sm:mt-10 lg:mt-32 pt-10 gap-8 flex-wrap">
@@ -70,7 +70,7 @@ function Home() {
       <div className="w-full mt-28  pl-32 pr-28">
         <h2 className="text-center text-slate-800 text-4xl font-bold mb-10">Trabajos Destacados</h2>
         <div className="w-full place-content-center grid gap-8 pb-10 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-          <Card img="tiendamascota.jpg" title="Tienda De Mascotas" text="Software integral para la gestión eficiente de una tienda de mascotas." />
+          <a target="_blank" href="https://mattelsa.vercel.app/"><Card img="mattelsa.png" title="Tienda De Ropa Mattelsa" text="Mattelsa es una tienda de ropa de mucha calidad, en este caso hice un replica de la pagina original" /></a>
           <Card img="segundo.gif" title="Gestion de documentos" text="Plataforma avanzada para la gestión electrónica de documentos y gestion de informacion." />
           <Card img="dashboard.png" title="Dashboard" text="Panel de control intuitivo que visualiza datos clave y métricas relevantes." />
           <Card img="ropa.png" title="Tienda de Ropa" text="Plataforma de comercio electrónico venta de ropa y accesorios con carrito de compras." />
