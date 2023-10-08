@@ -1,13 +1,14 @@
-import Navbar from "./components/Navbar"
-import Tecnologias from "./components/Tecnologias"
-import Card from "./components/Card"
-import { Github, Text } from "@react-symbols/icons"
-import FormContact from "./components/FormContact"
+import Navbar from "../components/Navbar"
+import Tecnologias from "../components/Tecnologias"
+import Card from "../components/Card"
+import { Github } from "@react-symbols/icons"
+import FormContact from "../components/FormContact"
 import 'aos/dist/aos.css';
 import Aos from 'aos';
 import { useEffect } from "react";
-import Float from "./components/Float"
-import Float2 from "./components/Float2"
+import Float from "../components/Float"
+import Float2 from "../components/Float2"
+import { Link } from "react-router-dom"
 
 
 
@@ -21,13 +22,13 @@ function Home() {
   return (
     <>
       <Navbar />
-      <section className="w-full flex sm:flex-col lg:flex-row items-center gap:10 flex-wrap ">
+      <section className="w-full flex sm:flex-col lg:flex-row items-center gap:10 flex-wrap">
         <div className="md:w-[50%] sm:h-0 md:h-screen pt-40">
           <div className="pl-10 mb-5">
-            <div data-aos="fade-right"
+            <div data-aos="fade-left"
               data-aos-duration="1500" className="pb-10">Hello Welcome</div>
 
-            <div data-aos="fade-up"
+            <div data-aos="fade-down"
               data-aos-duration="1500" className="font-bold text-slate-800 text-5xl mb-10">
               I'm Miller Efren <br></br>
               <div className="typewriter">Full Stack Developer</div>
@@ -36,7 +37,9 @@ function Home() {
               data-aos-duration="1500"
               data-aos-delay="200" className="font-bold text-white mt-6 flex gap-2 ">
               <a className="border bg-red-400 p-2 pl-3 pr-3 rounded-md">Hire Me</a>
-              <a className="text-black border-b-2 mt-2">See Portflio</a>
+              <Link to="class">
+                <a className="text-black border-b-2 mt-2">See Portflio</a>
+              </Link>
             </div>
 
             <div data-aos="fade-left"
@@ -47,7 +50,6 @@ function Home() {
               <span>Follow me:</span>
               <a target="_blank" href="https://www.linkedin.com/in/miller-rivera/"><img src="in.png" className="w-9" alt="" /></a>
               <a target="_blank" href="https://github.com/millerbermeo"><Github className="w-8" /></a>
-              <Text className="w-8" />
             </div>
           </div>
         </div>
@@ -59,7 +61,7 @@ function Home() {
           <Float2 />
         </div>
       </section>
-      <article className="w-full flex justify-center items-start sm:mt-10 lg:mt-32 pt-10 gap-8 flex-wrap">
+      <article id="services" className="w-full flex justify-center items-start sm:mt-10 lg:mt-32 pt-10 gap-8 flex-wrap bg-[aliceblue] py-10">
         <Tecnologias />
         <img data-aos="fade-left"
           data-aos-delay="50"
@@ -82,11 +84,12 @@ function Home() {
         <div className="w-full lg:flex gap-5 justify-center">
           <div className="w-[50%] flex flex-col gap-5">
             <div data-aos="fade-right"
-              data-aos-duration="1200" className="w-96 bg-red-400 text-white rounded-md p-2"><p><span className="font-bold">Resolución de Problemas:</span> Capacidad para analizar problemas complejos y desarrollar soluciones efectivas y eficientes.</p></div>
+              data-aos-duration="1200" className="w-96 bg-red-400 text-white rounded-md p-2"><p><span className="font-bold">Resolución de Problemas:</span> habilidad que considero fundamental en mi vida. Siempre he sido una persona que disfruta de enfrentar desafíos y encontrar soluciones efectivas.</p></div>
             <div data-aos="fade-right"
-              data-aos-duration="1200" className="w-96 sm:mt-0 lg:mt-[100px] bg-red-400 text-white rounded-md p-2"><p><span className="font-bold">Control de Versiones:</span> Experiencia en el uso de sistemas de control de versiones como Git para colaborar y rastrear cambios en el código.</p></div>
+              data-aos-duration="1200" className="w-96 sm:mt-0 lg:mt-[100px] bg-red-400 text-white rounded-md p-2"><p><span className="font-bold">Control de Versiones: </span>
+                Tengo experiencia en el uso de sistemas de control de versiones, como Git, para colaborar y rastrear cambios en el código.</p></div>
             <div data-aos="fade-right"
-              data-aos-duration="1200" className="w-96 sm:mt-0 lg:mt-[100px] bg-red-400 text-white rounded-md p-2"><p><span className="font-bold">Trabajo en Equipo:</span> Capacidad para colaborar con otros desarrolladores, diseñadores y profesionales para lograr objetivos comunes.</p></div>
+              data-aos-duration="1200" className="w-96 sm:mt-0 lg:mt-[100px] bg-red-400 text-white rounded-md p-2"><p><span className="font-bold">Trabajo en Equipo:</span> como programador tengo claro que la colaboración es esencial para lograr objetivos comunes y proyectos exitosos.</p></div>
           </div>
 
 
@@ -94,12 +97,12 @@ function Home() {
           <div className="w-[50%] flex flex-col gap-5 mt-5">
             <div data-aos="fade-left"
               data-aos-delay="50"
-              data-aos-duration="1300" className="w-96 sm:mt-0 lg:mt-[100px] bg-red-400 text-white rounded-md p-2"><p><span className="font-bold">Lógica y Algoritmos:</span> Comprender y aplicar algoritmos eficientes y estructuras de datos para resolver problemas y optimizar el rendimiento.</p></div>
+              data-aos-duration="1300" className="w-96 sm:mt-0 lg:mt-[100px] bg-red-400 text-white rounded-md p-2"><p><span className="font-bold">Lógica y Algoritmos:</span> me permite resolver problemas de manera eficiente y optimizar el rendimiento en diversas situaciones.</p></div>
             <div data-aos="fade-left"
-              data-aos-duration="1200" className="w-96 sm:mt-0 lg:mt-[100px] bg-red-400 text-white rounded-md p-2"><p><span className="font-bold">Aprendizaje Continuo:</span> La programación es un campo en constante evolución. La disposición a aprender nuevas tecnologías y enfoques es esencial.</p></div>
+              data-aos-duration="1200" className="w-96 sm:mt-0 lg:mt-[100px] bg-red-400 text-white rounded-md p-2"><p><span className="font-bold">Aprendizaje Continuo:</span> el aprendizaje continuo es una piedra angular en mi carrera como programador. En un campo tan dinámico como la programación, donde la tecnología y las metodologías evolucionan constantemente</p></div>
             <div data-aos="fade-left"
               data-aos-delay="50"
-              data-aos-duration="1300" className="w-96 sm:mt-0 lg:mt-[100px] bg-red-400 text-white rounded-md p-2"><p><span className="font-bold">Pruebas y Depuración:</span> Habilidad para probar y depurar código de manera efectiva para garantizar su funcionamiento correcto.</p></div>
+              data-aos-duration="1300" className="w-96 sm:mt-0 lg:mt-[100px] bg-red-400 text-white rounded-md p-2"><p><span className="font-bold">Pruebas y Depuración:</span> Cuento con la capacidad de probar y depurar código de manera efectiva para garantizar su funcionamiento correcto.</p></div>
           </div>
         </div>
       </section>

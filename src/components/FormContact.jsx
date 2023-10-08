@@ -6,7 +6,7 @@ function FormContact() {
       <div class="container my-24 mx-auto md:px-6">
   <section class="mb-32">
     <div
-      class="h-[300px] overflow-hidden bg-cover bg-[50%] bg-no-repeat bg-[url('https://mdbcdn.b-cdn.net/img/new/textures/full/171.jpg')]">
+      class="h-[300px] overflow-hidden bg-cover bg-[50%] bg-no-repeat bg-red-400">
     </div>
     <div class="container px-6 md:px-12">
       <div
