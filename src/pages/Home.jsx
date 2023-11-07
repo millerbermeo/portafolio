@@ -73,7 +73,7 @@ function Home() {
         <h2 className="text-center text-slate-800 text-4xl font-bold mb-10">Trabajos Destacados</h2>
         <div className="w-full place-content-center grid gap-8 pb-10 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           <a target="_blank" href="https://mattelsa.vercel.app/"><Card img="mattelsa.png" title="Tienda De Ropa Mattelsa" text="Mattelsa es una tienda de ropa de mucha calidad, en este caso hice un replica de la pagina original" /></a>
-          <a target="_blank" href="https://millerbermeo.github.io/mercado/mercadoLibre.html"><Card img="segundo.gif" title="Gestion de documentos" text="Plataforma avanzada para la gestión electrónica de documentos y gestion de informacion." /></a>
+          <a target="_blank" href="https://millerbermeo.github.io/mercado"><Card img="segundo.gif" title="Gestion de documentos" text="Plataforma avanzada para la gestión electrónica de documentos y gestion de informacion." /></a>
           <Card img="dashboard.png" title="Dashboard" text="Panel de control intuitivo que visualiza datos clave y métricas relevantes." />
           <Card img="ropa.png" title="Tienda de Ropa" text="Plataforma de comercio electrónico venta de ropa y accesorios con carrito de compras." />
         </div>
